@@ -1,7 +1,7 @@
 export default function showPopover(evt, btn) {
   if (evt.target === btn) {
     if (!btn.parentElement.querySelector('.popover')) {
-      const popoverEl = createPopover('Notification', `Thank's for click ;)`);
+      const popoverEl = createPopover('Notification', 'Thank\'s for click ;)');
       btn.parentElement.appendChild(popoverEl);
 
       popoverEl.style.top = `-${
